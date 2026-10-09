@@ -17,6 +17,7 @@ function themeSnapshot() {
 
 const LINKS = [
   { href: "/tools", label: "الأدوات" },
+  { href: "/library", label: "المكتبة" },
   { href: "/solutions", label: "الحلول" },
   { href: "/work", label: "الأعمال" },
   { href: "/studio", label: "الاستوديو" },
@@ -41,7 +42,7 @@ export function Header() {
         <Link href="/" className="text-lg font-semibold tracking-tight text-ink">
           ريشة 360
         </Link>
-        <nav className="ms-auto hidden items-center gap-1 lg:flex" aria-label="الرئيسي">
+        <nav className="ms-auto hidden items-center gap-1 xl:flex" aria-label="الرئيسي">
           {LINKS.map((link) => {
             const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
             return (
@@ -58,14 +59,14 @@ export function Header() {
         <button
           type="button"
           onClick={toggleTheme}
-          className="ms-auto inline-flex size-11 items-center justify-center rounded-full border border-line lg:ms-2"
+          className="ms-auto inline-flex size-11 items-center justify-center rounded-full border border-line xl:ms-2"
           aria-label={dark ? "الوضع الفاتح" : "الوضع الداكن"}
         >
           {dark ? <Sun size={20} weight="regular" /> : <Moon size={20} weight="regular" />}
         </button>
         <button
           type="button"
-          className="inline-flex size-11 items-center justify-center rounded-full border border-line lg:hidden"
+          className="inline-flex size-11 items-center justify-center rounded-full border border-line xl:hidden"
           aria-expanded={open}
           aria-label={open ? "إغلاق القائمة" : "فتح القائمة"}
           onClick={() => setOpen((value) => !value)}
@@ -74,7 +75,7 @@ export function Header() {
         </button>
       </div>
       {open ? (
-        <nav className="border-t border-line px-4 py-3 lg:hidden" aria-label="الجوال">
+        <nav className="border-t border-line px-4 py-3 xl:hidden" aria-label="الجوال">
           <ul className="grid gap-1">
             {LINKS.map((link) => (
               <li key={link.href}>

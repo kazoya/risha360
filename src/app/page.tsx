@@ -134,6 +134,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6">
+        <h2 className="text-4xl font-semibold tracking-tight">مراجع مفتوحة، ليست أدوات الموقع.</h2>
+        <p className="mt-3 max-w-[65ch] text-muted">
+          خمسون مهارة تسويق وسبعة وثلاثون وكيلاً من مستودعات MIT، مع بطاقة لـ OpenResearch. الطلب يبقى محادثة يدوية.
+        </p>
+        <Link href="/library" className="mt-6 inline-flex h-12 items-center rounded-full border border-line px-5">
+          افتح المكتبة
+        </Link>
+      </section>
+
       <section className="mx-auto grid max-w-[1400px] items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_auto]">
         <div>
           <h2 className="text-4xl font-semibold tracking-tight">راسل {CONTACT_NAME} عندما تجهز.</h2>

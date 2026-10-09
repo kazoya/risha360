@@ -10,7 +10,7 @@ export function Footer() {
           <p className="mt-3 text-sm leading-relaxed text-muted">
             تصور تسويقي مستقل للنقاش. ليس النظام الرسمي لمنصة عقل، ولا يشغّل أدواتها المدفوعة.
             كتالوج الخدمات مبني على الصفحات العامة في مرآة 3aqel.com. التنفيذ الحي هنا: الحاسبات،
-            رمز واتساب، وحفظ الطلبات في PostgreSQL. لا إرسال تلقائي.
+            رمز واتساب، وحفظ الطلبات في PostgreSQL. لا إرسال تلقائي. المكتبة تسرد مراجع MIT ولا تشغّلها.
           </p>
         </div>
         <div className="text-sm leading-7">
@@ -21,6 +21,10 @@ export function Footer() {
           </p>
           <p>{CONTACT_CITY}</p>
           <p className="mt-3">
+            <Link href="/library" className="underline decoration-gold underline-offset-4">
+              المكتبة المفتوحة
+            </Link>
+            {". "}
             <Link href="/contact" className="underline decoration-gold underline-offset-4">
               صفحة التواصل
             </Link>
